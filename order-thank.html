@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Оформление заказа</title>
+</head>
+
+
+<body class="m-page _open-auth2">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="header-contacts _flex">
+                            <div class="header-contacts__item header-contacts__item--address">
+                                <img src="img/marker.svg" alt="">
+                                <span class="text14">г. Севастополь, ул. Индустриальная, 26Г</span>
+                            </div>
+                            <a href="" class="header-contacts__item">
+                                <img src="img/phone2.svg" alt="">
+                                <span class="text14 medium-text">+7 (978) 734-57-00</span>
+                            </a>
+                        </div>
+                        <div class="contact-socials__items">
+                            <a href="" class="contact-socials__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6536 4.32154C12.4191 3.08629 10.7773 2.40529 9.02834 2.40454C5.42309 2.40454 2.48984 5.33629 2.48909 8.94004C2.48759 10.0868 2.78834 11.214 3.36134 12.2078L2.43359 15.5948L5.90009 14.6858C6.85934 15.2078 7.93334 15.4815 9.02534 15.4815H9.02834C12.6321 15.4815 15.5653 12.549 15.5668 8.94529C15.5676 7.19929 14.8881 5.55754 13.6536 4.32154Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.82227 10.1701L10.1268 9.8678C10.4065 9.5903 10.849 9.55505 11.1715 9.78155C11.4835 10.0006 11.7655 10.1971 12.028 10.3801C12.445 10.6696 12.4953 11.2636 12.136 11.6221L11.8668 11.8913" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6.10938 6.13429L6.37862 5.86504C6.73712 5.50654 7.33112 5.55679 7.62062 5.97304C7.80287 6.23554 7.99937 6.51754 8.21912 6.82954C8.44562 7.15204 8.41112 7.59454 8.13287 7.87429L7.83062 8.17879" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.8653 11.8913C10.7546 12.9968 8.88781 12.0578 7.41406 10.5833" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.41605 10.5855C5.9423 9.11103 5.0033 7.24503 6.1088 6.13428" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.83008 8.17883C8.06933 8.55608 8.37608 8.92958 8.72258 9.27608L8.72408 9.27758C9.07058 9.62408 9.44408 9.93083 9.82133 10.1701" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="contact-socials__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.8467 12.6794L7.29795 14.1862C7.02945 14.4472 6.5802 14.3317 6.47145 13.9732L5.43945 10.5757" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.579 8.19524C10.579 8.19524 8.63722 9.94724 7.64122 10.8465C7.34347 11.115 7.36822 11.5875 7.69072 11.8252L11.7242 14.805C12.121 15.0982 12.688 14.883 12.7907 14.4L14.7715 5.06474C14.8675 4.61324 14.4242 4.23599 13.9937 4.40174L2.35747 8.88974C2.01472 9.02174 2.03122 9.51149 2.38147 9.62099L5.43922 10.575" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="contact-socials__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.86345 5.25H9.4677V13.2697H9.46545C7.81395 13.2697 5.9997 12.267 4.71195 10.4182C2.77995 7.71 2.25195 5.6625 2.25195 5.25" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M15.7488 13.2697C15.7488 13.2697 15.1653 12.0398 13.9818 10.686C13.1928 9.76125 12.0813 9.26025 11.0703 9.26025C12.0813 9.26025 13.1928 8.75925 13.9818 7.8345C15.1653 6.48 15.7488 5.25 15.7488 5.25" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.0698 9.26245H9.46484" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="contact-socials__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1873 4.77978C16.0155 4.02678 15.507 3.43278 14.8605 3.22878C13.6912 2.86353 9 2.86353 9 2.86353C9 2.86353 4.311 2.86353 3.1395 3.22878C2.49525 3.42978 1.98675 4.02378 1.81275 4.77978C1.5 6.14628 1.5 9.00003 1.5 9.00003C1.5 9.00003 1.5 11.8538 1.81275 13.2203C1.9845 13.9733 2.493 14.5673 3.1395 14.7713C4.311 15.1365 9 15.1365 9 15.1365C9 15.1365 13.6912 15.1365 14.8605 14.7713C15.5047 14.5703 16.0133 13.9763 16.1873 13.2203C16.5 11.8538 16.5 9.00003 16.5 9.00003C16.5 9.00003 16.5 6.14628 16.1873 4.77978Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50195 11.25L11.399 9L7.50195 6.75V11.25Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="contact-socials__item">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.622 2.25H12.3788C14.2403 2.25 15.75 3.759 15.75 5.622V12.3788C15.75 14.2403 14.241 15.75 12.378 15.75H5.622C3.75975 15.75 2.25 14.241 2.25 12.378V5.622C2.25 3.75975 3.759 2.25 5.622 2.25V2.25Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.7125 5.03472C12.573 5.03547 12.4598 5.14872 12.4598 5.28822C12.4598 5.42772 12.5738 5.54097 12.7133 5.54097C12.8528 5.54097 12.966 5.42772 12.966 5.28822C12.9668 5.14797 12.8528 5.03472 12.7125 5.03472" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.91 7.09086C11.9644 8.14528 11.9644 9.85482 10.91 10.9092C9.85555 11.9637 8.14601 11.9637 7.09159 10.9092C6.03718 9.85482 6.03718 8.14528 7.09159 7.09086C8.14601 6.03644 9.85555 6.03644 10.91 7.09086" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="nav">
+                            <ul class="menu">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Блог</a></li>
+                                <li><a href="">Частые вопросы</a></li>
+                                <li><a href="">Сотрудничество</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner">
+                        <a href="" class="header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+
+                        <button class="catalog-btn m-btn m-btn-dark">
+                            <span class="catalog-btn__icon">
+                    <img src="img/burger.svg" alt="" class="_view1">
+                    <img src="img/burger2.svg" alt="" class="_view2">
+                </span>
+                            <span>Каталог</span>
+                        </button>
+
+                        <div class="header-search m-search">
+                            <div class="header-search__wrap">
+                                <div class="search-field">
+                                    <div class="fg">
+                                        <input class="_search-field" type="text" placeholder="Поиск по каталогу">
+                                        <button class="search-field__btn">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.5" d="M17.4697 18.5303C17.7626 18.8232 18.2374 18.8232 18.5303 18.5303C18.8232 18.2374 18.8232 17.7626 18.5303 17.4697L17.4697 18.5303ZM14.4265 8.58824C14.4265 11.8126 11.8126 14.4265 8.58824 14.4265V15.9265C12.641 15.9265 15.9265 12.641 15.9265 8.58824H14.4265ZM8.58824 14.4265C5.36387 14.4265 2.75 11.8126 2.75 8.58824H1.25C1.25 12.641 4.53544 15.9265 8.58824 15.9265V14.4265ZM2.75 8.58824C2.75 5.36387 5.36387 2.75 8.58824 2.75V1.25C4.53544 1.25 1.25 4.53544 1.25 8.58824H2.75ZM8.58824 2.75C11.8126 2.75 14.4265 5.36387 14.4265 8.58824H15.9265C15.9265 4.53544 12.641 1.25 8.58824 1.25V2.75ZM12.7638 13.8244L17.4697 18.5303L18.5303 17.4697L13.8244 12.7638L12.7638 13.8244Z" fill="#151B30" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="m-search__result">
+
+
+                                    <div class="m-search__items">
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="" class="search-item">
+                                            <span class="search-item__img">
+        <img src="img/search-img.webp" alt="">
+    </span>
+                                            <div class="search-item__content">
+                                                <div class="search-item__title text16">
+                                                    Элемент декоративный штампованный 14.735.01-Т
+                                                </div>
+                                                <div class="search-item__price text20 medium-text">
+                                                    2 250 ₽
+                                                </div>
+                                            </div>
+                                            <div class="search-item__btn m-btn m-btn-blue-outline">
+                                                <span>Перейти</span>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="m-search__nav">
+                                        <a href="" class="m-search__link m-btn m-btn-black">
+                                            <span>Смотреть все 192 резульата</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="header-search__btn _show-search">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div class="header-action">
+                            <a href="" class="header-action__item">
+                                <img src="img/user2.svg" alt="">
+                            </a>
+                            <a href="" class="header-action__item">
+                                <img src="img/compare2.svg" alt="">
+                            </a>
+                            <a href="" class="header-action__item">
+                                <img src="img/favourite2.svg" alt="">
+                            </a>
+                            <a href="" class="header-action__item">
+                                <img src="img/cart3.svg" alt="">
+                                <span class="pin">
+                        <span>6</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="header-menu">
+                            <button class="header-menu__back">
+                                <img src="img/back.svg" alt="">
+                                <span>Кованые элементы</span>
+                            </button>
+                            <div class="header-menu__address">
+                                <img src="img/marker.svg" alt="">
+                                <span class="text14">
+                        г. Севастополь, ул. Индустриальная, 26Г
+                    </span>
+                            </div>
+                            <div class="header-menu__title">
+                                <img src="img/burger4.svg" alt="">
+                                <span class="text16">
+                        Каталог товаров
+                    </span>
+                            </div>
+                            <ul class="catalog-menu2">
+                                <li class="catalog-menu2__item _active">
+                                    <div class="catalog-menu2__show">
+                                        Кованые элементы
+                                    </div>
+                                    <ul class="catalog-submenu">
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Балясины</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon2.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Вензеля, Кольца, Запятые
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Вензеля</a></li>
+                                                    <li><a href="">Кольца</a></li>
+                                                    <li><a href="">Кольца</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon3.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Виноград кованый</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon4.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Вставки в балясину</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon5.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Животные в ковке</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon6.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Заглушки, крышки
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Крышки столба</a></li>
+                                                    <li><a href="">Пластиковые заглушки</a></li>
+                                                    <li><a href="">Заглушки на болт/гайку</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon7.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Заклёпки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon8.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Корзинки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon9.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Ключницы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon10.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Листья</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon11.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Навершие столба</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon12.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Накладки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon13.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Основание балясин
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Подпятники штампованные</a></li>
+                                                    <li><a href="">Подпятники литые</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon14.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Переходы на трубы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon15.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Пики кованые</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon16.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Поручни, окончания, заглушки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon17.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Розетки и панели</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon18.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Ручки, петли и засовы
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Ручки ворот, калиток и дверей</a></li>
+                                                    <li><a href="">Петли, засовы</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon19.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Столбы опорные</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon20.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Цифры</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon21.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Цветы
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Цветы штампованные</a></li>
+                                                    <li><a href="">Цветы литые</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="catalog-submenu__item _has-children">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon22.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">
+                                                        Шары и полусферы
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="catalog-submenu__hidden">
+                                                <ul class="catalog-submenu__links">
+                                                    <li><a href="">Пустотелые шары</a></li>
+                                                    <li><a href="">Горячештампованные шары</a></li>
+                                                    <li><a href="">Кованые шары</a></li>
+                                                    <li><a href="">Полусферы</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="catalog-menu2__item">
+                                    <div class="catalog-menu2__show">
+                                        Краски/Патина
+                                    </div>
+                                    <ul class="catalog-submenu">
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon23.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кузнечные краски</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon24.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кузнечная патина</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="catalog-menu2__item">
+                                    <div class="catalog-menu2__show">
+                                        Художественный прокат
+                                    </div>
+                                    <ul class="catalog-submenu">
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon25.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Квадрат</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon26.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Хомутная полоса</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="catalog-menu2__item">
+                                    <div class="catalog-menu2__show">
+                                        Сопутствующие товары
+                                    </div>
+                                    <ul class="catalog-submenu">
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon27.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Рулетки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon28.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Сверла</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon29.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Щетки УШМ</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon30.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Средства индивидуальной защиты</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon31.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Батарейки <br> и аккумуляторы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon32.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Шлифовальные губки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon33.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Ножи</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon34.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Шлифовальные губки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon35.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Борфрезы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon36.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Диски</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon37.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Сварочная химия</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon38.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Сварочная проволока</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="catalog-menu2__item">
+                                    <div class="catalog-menu2__show">
+                                        Кованые изделия
+                                    </div>
+                                    <ul class="catalog-submenu">
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon39.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые ворота</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon40.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые калитки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon41.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые ограждения</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon42.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые перила</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon43.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые лестницы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon44.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые навесы</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon45.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Кованые козырьки</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="catalog-submenu__item">
+                                            <div class="catalog-submenu__show">
+                                                <div class="catalog-submenu__icon">
+                                                    <img src="img/menu-icon46.jpg" alt="">
+                                                </div>
+                                                <div class="catalog-submenu__title">
+                                                    <a href="">Металлоконструкции</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="header-menu__title">
+                                <img src="img/burger5.svg" alt="">
+                                <span class="text16">
+                        Меню сайта
+                    </span>
+                            </div>
+                            <div class="nav3">
+                                <ul class="menu">
+                                    <li><a href="">О нас</a></li>
+                                    <li><a href="">Блог</a></li>
+                                    <li><a href="">Частые вопросы</a></li>
+                                    <li><a href="">Сотрудничество</a></li>
+                                    <li><a href="">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-contacts">
+                                <div class="contact-socials__items">
+                                    <a href="" class="contact-socials__item">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6536 4.32154C12.4191 3.08629 10.7773 2.40529 9.02834 2.40454C5.42309 2.40454 2.48984 5.33629 2.48909 8.94004C2.48759 10.0868 2.78834 11.214 3.36134 12.2078L2.43359 15.5948L5.90009 14.6858C6.85934 15.2078 7.93334 15.4815 9.02534 15.4815H9.02834C12.6321 15.4815 15.5653 12.549 15.5668 8.94529C15.5676 7.19929 14.8881 5.55754 13.6536 4.32154Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.82227 10.1701L10.1268 9.8678C10.4065 9.5903 10.849 9.55505 11.1715 9.78155C11.4835 10.0006 11.7655 10.1971 12.028 10.3801C12.445 10.6696 12.4953 11.2636 12.136 11.6221L11.8668 11.8913" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.10938 6.13429L6.37862 5.86504C6.73712 5.50654 7.33112 5.55679 7.62062 5.97304C7.80287 6.23554 7.99937 6.51754 8.21912 6.82954C8.44562 7.15204 8.41112 7.59454 8.13287 7.87429L7.83062 8.17879" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.8653 11.8913C10.7546 12.9968 8.88781 12.0578 7.41406 10.5833" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.41605 10.5855C5.9423 9.11103 5.0033 7.24503 6.1088 6.13428" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.83008 8.17883C8.06933 8.55608 8.37608 8.92958 8.72258 9.27608L8.72408 9.27758C9.07058 9.62408 9.44408 9.93083 9.82133 10.1701" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="contact-socials__item">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.8467 12.6794L7.29795 14.1862C7.02945 14.4472 6.5802 14.3317 6.47145 13.9732L5.43945 10.5757" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10.579 8.19524C10.579 8.19524 8.63722 9.94724 7.64122 10.8465C7.34347 11.115 7.36822 11.5875 7.69072 11.8252L11.7242 14.805C12.121 15.0982 12.688 14.883 12.7907 14.4L14.7715 5.06474C14.8675 4.61324 14.4242 4.23599 13.9937 4.40174L2.35747 8.88974C2.01472 9.02174 2.03122 9.51149 2.38147 9.62099L5.43922 10.575" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="contact-socials__item">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.86345 5.25H9.4677V13.2697H9.46545C7.81395 13.2697 5.9997 12.267 4.71195 10.4182C2.77995 7.71 2.25195 5.6625 2.25195 5.25" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M15.7488 13.2697C15.7488 13.2697 15.1653 12.0398 13.9818 10.686C13.1928 9.76125 12.0813 9.26025 11.0703 9.26025C12.0813 9.26025 13.1928 8.75925 13.9818 7.8345C15.1653 6.48 15.7488 5.25 15.7488 5.25" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.0698 9.26245H9.46484" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="contact-socials__item">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1873 4.77978C16.0155 4.02678 15.507 3.43278 14.8605 3.22878C13.6912 2.86353 9 2.86353 9 2.86353C9 2.86353 4.311 2.86353 3.1395 3.22878C2.49525 3.42978 1.98675 4.02378 1.81275 4.77978C1.5 6.14628 1.5 9.00003 1.5 9.00003C1.5 9.00003 1.5 11.8538 1.81275 13.2203C1.9845 13.9733 2.493 14.5673 3.1395 14.7713C4.311 15.1365 9 15.1365 9 15.1365C9 15.1365 13.6912 15.1365 14.8605 14.7713C15.5047 14.5703 16.0133 13.9763 16.1873 13.2203C16.5 11.8538 16.5 9.00003 16.5 9.00003C16.5 9.00003 16.5 6.14628 16.1873 4.77978Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50195 11.25L11.399 9L7.50195 6.75V11.25Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="contact-socials__item">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.622 2.25H12.3788C14.2403 2.25 15.75 3.759 15.75 5.622V12.3788C15.75 14.2403 14.241 15.75 12.378 15.75H5.622C3.75975 15.75 2.25 14.241 2.25 12.378V5.622C2.25 3.75975 3.759 2.25 5.622 2.25V2.25Z" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.7125 5.03472C12.573 5.03547 12.4598 5.14872 12.4598 5.28822C12.4598 5.42772 12.5738 5.54097 12.7133 5.54097C12.8528 5.54097 12.966 5.42772 12.966 5.28822C12.9668 5.14797 12.8528 5.03472 12.7125 5.03472" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10.91 7.09086C11.9644 8.14528 11.9644 9.85482 10.91 10.9092C9.85555 11.9637 8.14601 11.9637 7.09159 10.9092C6.03718 9.85482 6.03718 8.14528 7.09159 7.09086C8.14601 6.03644 9.85555 6.03644 10.91 7.09086" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <a href="" class="header-contacts__item">
+                                    <img src="img/phone2.svg" alt="">
+                                    <span class="text14 bold-text">+7 (978) 734-57-00</span>
+                                </a>
+                                <a href="" class="header-contacts__item header-contacts__item--mail">
+                                    <img src="img/mail3.svg" alt="">
+                                    <span class="text14">info@elementica.ru</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-menu__bg _backdrop _close-menu"></div>
+                        <button class="header-menu__close close-btn _close-menu">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.63574 6.63599L19.3637 19.3639" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19.3637 6.63599L6.63574 19.3639" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="nav2">
+                        <ul class="menu">
+                            <li><a href="">Пики</a></li>
+                            <li><a href="">Вставки в балясину</a></li>
+                            <li><a href="">Основания балясин</a></li>
+                            <li><a href="">Вензеля и кольца</a></li>
+                            <li class="_hide-tablet"><a href="">Балясины</a></li>
+                            <li class="_hide-tablet"><a href="">Столбы опорные</a></li>
+                            <li class="_hide-tablet"><a href="">Шары</a></li>
+                            <li class="_sale"><a href="">Акционные товары</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+        </header>
+        <main class="content">
+
+            <div class="page-top">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li><a href="">Главная</a></li>
+                        <li><a>Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="order page-block">
+                <div class="container">
+                    <div class="h2">
+                        Оформление заказа
+                    </div>
+
+                    <div class="order-thank">
+                        <div class="order-thank__top">
+                            <div class="text20 text17-tablet medium-text">
+                                Спасибо! Ваш заказ успешно оформлен.
+                            </div>
+                            <div class="text16">
+                                Скоро с вами свяжется менеджер для согласования заказа. Пока что можете ознакомиться с подробностями.
+                            </div>
+                        </div>
+
+                        <div class="order-info">
+                            <div class="order-info__item">
+                                <div class="order-info__item-inner">
+                                    <div class="order-info__title">Номер заказа:</div>
+                                    <div class="order-info__desc">#65754</div>
+                                </div>
+                            </div>
+                            <div class="order-info__item">
+                                <div class="order-info__item-inner">
+                                    <div class="order-info__title">Дата:</div>
+                                    <div class="order-info__desc">14 Августа 2023</div>
+                                </div>
+                            </div>
+                            <div class="order-info__item">
+                                <div class="order-info__item-inner">
+                                    <div class="order-info__title">Итого:</div>
+                                    <div class="order-info__desc">36 829 ₽</div>
+                                </div>
+                            </div>
+                            <div class="order-info__item">
+                                <div class="order-info__item-inner">
+                                    <div class="order-info__title">Способ оплаты:</div>
+                                    <div class="order-info__desc">Оплата картой на сайте</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-detail">
+                            <div class="order-detail__head order-detail__grid">
+                                <div class="order-detail__col">
+                                    <div class="text16">Товар</div>
+                                </div>
+                                <div class="order-detail__col">
+                                    <div class="text16">Артикул</div>
+                                </div>
+                                <div class="order-detail__col">
+                                    <div class="text16">Итого</div>
+                                </div>
+                            </div>
+                            <div class="order-detail__items">
+                                <div class="detail-item _type1 order-detail__grid">
+                                    <div class="detail-item__col">
+                                        <div class="text16">Элемент декоративный штампованный, накладка 14.735.01-Т</div>
+                                        <div class="detail-item__count text14">
+                                            x1
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col2">
+                                        <div class="detail-item__mob-title text14 bold-text">
+                                            Артикул:
+                                        </div>
+                                        <div class="detail-item__art text14 p-text">
+                                            14.735.01-Т
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col3">
+                                        <div class="detail-item__price">
+                                            17 899 ₽
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item _type1 order-detail__grid">
+                                    <div class="detail-item__col">
+                                        <div class="text16">Элемент декоративный штампованный, накладка 14.735.01-Т</div>
+                                        <div class="detail-item__count text14">
+                                            x1
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col2">
+                                        <div class="detail-item__mob-title text14 bold-text">
+                                            Артикул:
+                                        </div>
+                                        <div class="detail-item__art text14 p-text">
+                                            14.735.01-Т
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col3">
+                                        <div class="detail-item__price">
+                                            17 899 ₽
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item _type1 order-detail__grid">
+                                    <div class="detail-item__col">
+                                        <div class="text16">Элемент декоративный штампованный, накладка 14.735.01-Т</div>
+                                        <div class="detail-item__count text14">
+                                            x1
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col2">
+                                        <div class="detail-item__mob-title text14 bold-text">
+                                            Артикул:
+                                        </div>
+                                        <div class="detail-item__art text14 p-text">
+                                            14.735.01-Т
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col3">
+                                        <div class="detail-item__price">
+                                            17 899 ₽
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item _type1 order-detail__grid">
+                                    <div class="detail-item__col">
+                                        <div class="text16">Элемент декоративный штампованный, накладка 14.735.01-Т</div>
+                                        <div class="detail-item__count text14">
+                                            x1
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col2">
+                                        <div class="detail-item__mob-title text14 bold-text">
+                                            Артикул:
+                                        </div>
+                                        <div class="detail-item__art text14 p-text">
+                                            14.735.01-Т
+                                        </div>
+                                    </div>
+                                    <div class="detail-item__col3">
+                                        <div class="detail-item__price">
+                                            17 899 ₽
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detail-item _type2">
+                                    <div class="text18 semi-bold-text">
+                                        Сумма:
+                                    </div>
+                                    <div class="detail-item__price">
+                                        36 829 ₽
+                                    </div>
+                                </div>
+                                <div class="detail-item _type2">
+                                    <div class="text18 semi-bold-text">
+                                        Скидка по промокоду:
+                                    </div>
+                                    <div class="detail-item__price red-text">
+                                        -420 ₽
+                                    </div>
+                                </div>
+                                <div class="detail-item _type2">
+                                    <div class="text18 semi-bold-text">
+                                        Способ оплаты:
+                                    </div>
+                                    <div class="detail-item__desc text16">
+                                        После согласования с менеджером
+                                    </div>
+                                </div>
+                                <div class="detail-item _type2">
+                                    <div class="text26 semi-bold-text">
+                                        Итого:
+                                    </div>
+                                    <div class="text26 medium-text blue-text2">
+                                        136 409 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warehouse">
+                            <div class="warehouse__col1">
+                                <div class="text16 semi-bold-text">
+                                    Пункт самовывоза:
+                                </div>
+                                <div class="warehouse__items">
+                                    <div class="warehouse__item">
+                                        <img src="img/marker.svg" alt="">
+                                        <div class="warehouse__item-content">
+                                            <div class="text16 warehouse__item-title">Адрес магазина для самовывоза:</div>
+                                            <div class="text16">г. Севастополь, ул. Индустриальная, 26Г</div>
+                                            <div class="text16 p-text">пн. - вс. : с 10:00 до 20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="warehouse__item">
+                                        <img src="img/phone2.svg" alt="">
+                                        <div class="warehouse__item-content">
+                                            <div class="text16 warehouse__item-title">Телефон:</div>
+                                            <a href="tel:+79783450555" class="text16">+7 978 345 05 55</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="warehouse__col2">
+                                <img src="img/map.jpg" alt="" class="warehouse__map">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-modal__wrap">
+                <div class="auth-modal">
+                    <div class="auth-modal__title h4 text19-tablet">
+                        Войти
+                    </div>
+                    <form class="login-form">
+                        <fieldset class="fg fg--big">
+                            <label>
+                                Email: <span>*</span>
+                            </label>
+                            <input type="email" placeholder="Введите логин или email адрес">
+                        </fieldset>
+                        <fieldset class="fg fg--big">
+                            <label>
+                                Пароль: <span>*</span>
+                            </label>
+                            <input type="password" placeholder="*********">
+                        </fieldset>
+                        <a href="" class="login-form__link m-link m-btn-blue-outline">
+                            <span>Восстановить пароль</span>
+                        </a>
+                        <button class="m-btn m-btn-black m-btn-normal">
+                            <span>Войти</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="auth-modal__bg _toggle-auth"></div>
+                <button class="auth-modal__close close-btn _toggle-auth">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.63574 6.63605L19.3637 19.364" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19.3637 6.63605L6.63574 19.364" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-top__col1">
+                        <div class="footer-top__info">
+                            <a href="" class="footer__logo">
+                                <img src="img/logo2.svg" alt="">
+                            </a>
+                            <div class="footer__text">
+                                <div class="footer__text-item">
+                                    <div class="text14 text12-tablet p-text">
+                                        ИП Комаричев Богдан Алексеевич
+                                    </div>
+                                </div>
+                                <div class="footer__text-item">
+                                    <div class="text14 text12-tablet p-text">
+                                        ИНН/КПП 920460495600 <br>
+                            ОГРН 322920000010931
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/vk2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/youtube2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ig.svg" alt="">
+                            </a>
+                            <div class="socials__hint">
+                                <div class="text14 text13-tablet">
+                                    <span class="_view1">*Instagram является запрещенной соц.сетью на территории РФ</span>
+                                    <span class="_view2">*Instagram запрещен на территории РФ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer-nav__title">
+                                Меню
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.54018C3.84171 4.73544 4.15829 4.73544 4.35355 4.54018L7.53553 1.3582C7.7308 1.16293 7.7308 0.846352 7.53553 0.65109C7.34027 0.455828 7.02369 0.455828 6.82843 0.65109L4 3.47952L1.17157 0.651089C0.976311 0.455827 0.659728 0.455827 0.464466 0.651089C0.269204 0.846351 0.269204 1.16293 0.464466 1.3582L3.64645 4.54018ZM3.5 4.18652L3.5 4.18662L4.5 4.18662L4.5 4.18652L3.5 4.18652Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>О нас</span></a>
+                                <a href="" class="footer-nav__link"><span>Блог</span></a>
+                                <a href="" class="footer-nav__link"><span>Частые вопросы</span></a>
+                                <a href="" class="footer-nav__link"><span>Контакты</span></a>
+                                <a href="" class="footer-nav__link"><span>Сотрудничество</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav__show">
+                            <div class="footer-nav__title">
+                                Каталог
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.54018C3.84171 4.73544 4.15829 4.73544 4.35355 4.54018L7.53553 1.3582C7.7308 1.16293 7.7308 0.846352 7.53553 0.65109C7.34027 0.455828 7.02369 0.455828 6.82843 0.65109L4 3.47952L1.17157 0.651089C0.976311 0.455827 0.659728 0.455827 0.464466 0.651089C0.269204 0.846351 0.269204 1.16293 0.464466 1.3582L3.64645 4.54018ZM3.5 4.18652L3.5 4.18662L4.5 4.18662L4.5 4.18652L3.5 4.18652Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden">
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link"><span>Кованые элементы</span></a>
+                                <a href="" class="footer-nav__link"><span>Художественный прокат</span></a>
+                                <a href="" class="footer-nav__link"><span>Краски/Патина</span></a>
+                                <a href="" class="footer-nav__link"><span>Сопутствующие товары</span></a>
+                                <a href="" class="footer-nav__link"><span>Акции</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-nav _active">
+                        <div class="footer-nav__show">
+                            <div class="footer-nav__title">
+                                Контакты
+                            </div>
+                            <button class="footer-nav__btn">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 4.54018C3.84171 4.73544 4.15829 4.73544 4.35355 4.54018L7.53553 1.3582C7.7308 1.16293 7.7308 0.846352 7.53553 0.65109C7.34027 0.455828 7.02369 0.455828 6.82843 0.65109L4 3.47952L1.17157 0.651089C0.976311 0.455827 0.659728 0.455827 0.464466 0.651089C0.269204 0.846351 0.269204 1.16293 0.464466 1.3582L3.64645 4.54018ZM3.5 4.18652L3.5 4.18662L4.5 4.18662L4.5 4.18652L3.5 4.18652Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-nav__hidden" style="display: block;">
+                            <div class="footer-nav__links">
+                                <div class="footer-nav__link">
+                                    <img src="img/marker3.svg" alt="">
+                                    <span>
+                            г. Севастополь, <br> ул. Индустриальная, 26Г
+                        </span>
+                                </div>
+                                <a href="tel:+79783450555" class="footer-nav__link">
+                                    <img src="img/phone3.svg" alt="">
+                                    <span>+7 978 345 05 55</span>
+                                </a>
+                                <a href="mailto:info@elementica.ru" class="footer-nav__link">
+                                    <img src="img/mail4.svg" alt="">
+                                    <span>info@elementica.ru</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__c text16 p-text">
+                        © 2024 Элементика
+                    </div>
+                    <a href="" class="footer-bottom__conf text16 p-text">
+                        Политика конфиденциальности
+                    </a>
+                    <a href="" class="footer-bottom__by">
+                        <img src="img/logo3.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="cookie-modal _active2">
+        <div class="container">
+            <div class="cookie-modal__inner">
+                <div class="cookie-modal__content">
+                    <div class="cookie-modal__title text20">
+                        Сайт использует Cookie
+                    </div>
+                    <div class="cookie-modal__desc text16">
+                        Используя данный сайт, вы даете согласие на использование файлов cookie, данных об IP-адресе и местоположении, помогающих нам сделать его удобнее для вас.
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cookie-modal__nav">
+                    <button class="cookie-modal__btn m-btn m-btn-blue m-btn-normal">
+                        <span>Принять и закрыть</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63574 6.63623L19.3637 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.3637 6.63623L6.63574 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="h4 medium-text">
+                    Оставить заявку
+                </div>
+            </div>
+            <form class="modal-form">
+                <div class="consult-form__fields">
+                    <div class="fg">
+                        <img src="img/user3.svg" alt="" class="fg__icon">
+                        <input type="email" placeholder="Ваше имя *">
+                    </div>
+                    <div class="fg">
+                        <img src="img/phone.svg" alt="" class="fg__icon">
+                        <input type="tel" placeholder="+7 (999) 999-99-99*">
+                    </div>
+                    <div class="fg _full">
+                        <textarea placeholder="Подробности об изделии *    "></textarea>
+                    </div>
+                </div>
+                <div class="consult-form__bottom">
+                    <button class="consult-form__btn m-btn m-btn-dark">
+                        <span>Отправить</span>
+                        <img src="img/mess.svg" alt="">
+                    </button>
+                    <div class="consult-form__hint">
+                        Нажимая кнопку «Отправить», вы соглашаетесь с условиями <a href="">политики конфиденциальности</a>.
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63574 6.63623L19.3637 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.3637 6.63623L6.63574 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="h4 medium-text">
+                    Оставить заявку
+                </div>
+            </div>
+            <div class="modal-product">
+                <div class="modal-product__img">
+                    <img src="img/modal-img.webp" alt="">
+                </div>
+                <div class="modal-product__content">
+                    <div class="text20 text17-tablet medium-text">
+                        Кованые ворота с художественными элементами
+                    </div>
+                    <div class="modal-product__articul text14 p-text">
+                        Артикул <span>SK35.10.100.BZ</span>
+                    </div>
+                    <div class="modal-product__bottom">
+                        <div class="modal-product__prices">
+                            <div class="modal-product__prices-title">
+                                от
+                            </div>
+                            <div class="text20 text17-tablet medium-text">
+                                80 000 ₽/м2
+                            </div>
+                        </div>
+                        <div class="modal-product__hint text12">
+                            Цена указана за металлоконструкцию без покраски. Цену под ключ узнавайте у менеджера
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="modal-form">
+                <div class="consult-form__fields">
+                    <div class="fg">
+                        <img src="img/user3.svg" alt="" class="fg__icon">
+                        <input type="email" placeholder="Ваше имя *">
+                    </div>
+                    <div class="fg">
+                        <img src="img/phone.svg" alt="" class="fg__icon">
+                        <input type="tel" placeholder="+7 (999) 999-99-99*">
+                    </div>
+                    <div class="fg _full">
+                        <textarea placeholder="Подробности об изделии *    "></textarea>
+                    </div>
+                </div>
+                <div class="consult-form__bottom">
+                    <button class="consult-form__btn m-btn m-btn-dark">
+                        <span>Отправить</span>
+                        <img src="img/mess.svg" alt="">
+                    </button>
+                    <div class="consult-form__hint">
+                        Нажимая кнопку «Отправить», вы соглашаетесь с условиями <a href="">политики конфиденциальности</a>.
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63574 6.63623L19.3637 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.3637 6.63623L6.63574 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="thank-modal__content">
+                <img src="img/check5.svg" alt="">
+                <div class="h4 medium-text">
+                    Спасибо за заявку!
+                </div>
+                <div class="thank-modal__desc text16 gray-text">
+                    Мы получили вашу заявку. Наш менеджер свяжется с Вами по указанным контактам в ближайшее время для уточнения всех деталей.
+                </div>
+                <button class="_close-modal thank-modal__btn m-btn m-btn-dark m-btn-normal">
+                    <span>Закрыть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal product-modal" id="productModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63574 6.63623L19.3637 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.3637 6.63623L6.63574 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="product-modal__grid">
+                <div class="product-modal__img">
+                    <div class="gallery__img">
+                        <img src="img/gallery.webp" alt="Галлерея">
+                    </div>
+                </div>
+                <div class="product-modal__content">
+                    <div class="text20 text17-tablet medium-text">
+                        Элемент декоративный штампованный, накладка 14.735.01Т
+                    </div>
+                    <div class="product-modal__info">
+                        <div class="product-modal__info-item">
+                            <div class="text14 p-text">
+                                Статус:
+                            </div>
+                            <div class="product-card__available _flex">
+                                <img src="img/available-icon.svg" alt="">
+                                <div class="text12 green-text">
+                                    В наличии
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-modal__info-item">
+                            <div class="text14 p-text">
+                                Артикул
+                            </div>
+                            <div class="text14 sh-text">
+                                SK35.10.100.BZ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-props">
+                        <div class="text20 text17-mob medium-text">
+                            Характеристика товара
+                        </div>
+                        <div class="product-props__items">
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Длина</div>
+                                <div class="prop-item__desc">8,5 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Ширина</div>
+                                <div class="prop-item__desc">50 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Высота</div>
+                                <div class="prop-item__desc">30 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Вес</div>
+                                <div class="prop-item__desc">0,5 кг</div>
+                            </div>
+                        </div>
+
+                        <div class="product-props__hint">
+                            <img src="img/info4.svg" alt="">
+                            <div class="text14 p-text">
+                                Технические характеристики элемента могут незначительно отличаться от указанных
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card__prices">
+                        <div class="product-card__price">
+                            2 460 ₽
+                        </div>
+                        <div class="product-card__price2">
+                            2 572 ₽
+                        </div>
+                        <div class="product-card__sale m-badge _orange">
+                            <span class="text12">-5%</span>
+                        </div>
+                    </div>
+                    <div class="product-modal__nav">
+                        <div class='cartcalc'>
+                            <button class='ccalc-minus'>
+                                <svg width="10" height="3" viewBox="0 0 10 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.24264 1.49996H0.757359" stroke="#151B30" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <input type='text' value='1'>
+                            <button class='ccalc-plus'>
+                                <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 0.5V8.5" stroke="#151B30" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9 4.5H1" stroke="#151B30" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button class="product-modal__btn m-btn m-btn-dark m-btn-normal">
+                            <span>В корзину</span>
+                        </button>
+                        <button class="_full product-modal__btn m-btn m-btn-blue-outline m-btn-normal">
+                            <span>Перейти к товару </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal product-modal _type2" id="productModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63574 6.63623L19.3637 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.3637 6.63623L6.63574 19.3641" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="product-modal__grid">
+                <div class="product-modal__img">
+                    <div class="gallery__img">
+                        <img src="img/modal-img2.webp" alt="Галлерея">
+                    </div>
+                </div>
+                <div class="product-modal__content">
+                    <div class="text20 text17-tablet medium-text">
+                        Кованые ворота с художественными элементами
+                    </div>
+                    <div class="product-modal__info">
+                        <div class="product-modal__info-item">
+                            <div class="text14 p-text">
+                                Статус:
+                            </div>
+                            <div class="product-card__available _flex">
+                                <img src="img/available-icon2.svg" alt="">
+                                <div class="text12 p-text">
+                                    Под заказ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-modal__info-item">
+                            <div class="text14 p-text">
+                                Артикул
+                            </div>
+                            <div class="text14 sh-text">
+                                SK35.10.100.BZ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-props">
+                        <div class="text20 text17-mob medium-text">
+                            Характеристика товара
+                        </div>
+                        <div class="product-props__items">
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Длина</div>
+                                <div class="prop-item__desc">8,5 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Ширина</div>
+                                <div class="prop-item__desc">50 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Высота</div>
+                                <div class="prop-item__desc">30 мм</div>
+                            </div>
+                            <div class="prop-item">
+                                <div class="prop-item__title p-text">Вес</div>
+                                <div class="prop-item__desc">0,5 кг</div>
+                            </div>
+                        </div>
+
+                        <div class="product-props__hint">
+                            <img src="img/info4.svg" alt="">
+                            <div class="text14 p-text">
+                                Технические характеристики элемента могут незначительно отличаться от указанных
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-prices">
+                        <div class="text14 p-text">
+                            Цена
+                        </div>
+                        <div class="modal-prices__wrap">
+                            <div class="modal-prices__from text14">
+                                от
+                            </div>
+                            <div class="modal-prices__num">
+                                80 000 ₽/м2
+                            </div>
+                        </div>
+                        <div class="modal-prices__hint">
+                            <div class="text12">
+                                Цена указана за металлоконструкцию без покраски. Цену под ключ узнавайте у менеджера
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-modal__nav">
+                        <button class="_full product-modal__btn m-btn m-btn-dark m-btn-normal">
+                            <span>Оставить заявку</span>
+                        </button>
+                        <button class="_full product-modal__btn m-btn m-btn-blue-outline m-btn-normal">
+                            <span>Перейти к товару </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-alert">
+        <div class="product-alert__img">
+            <img src="img/cart-img.webp" alt="">
+        </div>
+        <div class="product-alert__content">
+            <div class="product-alert__mess">
+                <img src="img/check6.svg" alt="">
+                <span class="text14">
+                Товар добавлен к корзину
+            </span>
+            </div>
+            <div class="product-alert__title text16">
+                Элемент декоративный штампованный, накладка 14.735.01-Т
+            </div>
+            <div class="product-alert__price text20 medium-text">
+                1 200 ₽
+            </div>
+        </div>
+        <button class="product-alert__close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.4">
+                    <path d="M5.03613 5.03687L12.9623 12.963" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.9623 5.03687L5.03613 12.963" stroke="#151B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
